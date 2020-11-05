@@ -2,6 +2,17 @@
 <p></p>
 <p><img alt="" height="200" src="/images/EEQ2Zp8U8AAkNMD.jpg" width="300"/></p>
 <p></p>
-<h1>W1</h1>
-<p>hi</p>
+<h1>建立網站</h1>
+<p>step1<br/>下載可攜式python verson 3.8.5 "fall 2020"<br/>利用cmd指令查看當前python版本以及所是用套件清單</p>
+<p><span>step</span>2<br/>去google git window 以下載git 套件<br/>解壓縮fall2020/data/新增資料夾portablegit<br/>將start.bat拉出更改cord</p>
+<p>REM for portable git<br/>set path_git=%Disk%:\portablegit\bin;<br/>在path路徑後新增 %path_git%; 變數</p>
+<p>設定完後重啟start.bat<br/>輸入指令git version 以測試git指令套件是否生效及查看版本</p>
+<p><span>step</span>3<br/>cd fall2020/tmp<br/>*使用學校電腦時需設置代理伺服器porxy<br/>*輸入指令git config --global http.proxy http://[2001:288:6004:17::69]:3128<br/>抓取個人姓名及帳號<br/>git config --global user.email "40823148@gm.nfu.edu"</p>
+<p>git config --global user.name "40823148"</p>
+<p><span>step</span>4<br/>在github建立倉儲cad2020<br/>cd tmp 進入tmp目錄下<br/>將建立的倉儲抓下來並在tmp目錄下建立cad2020子目錄<br/>git clone https://github.com/40823148/cad2020.git</p>
+<p><span>step</span>5<br/>cd tmp/cad2020 進入tmp目錄中的cad子目錄<br/>輸入指令<br/>git submodule add https://github.com/mdecourse/cmsimde.git cmsimde<br/>將在mdecourse倉儲中的模組git下來並在cad2020中建立cmsimde的目錄</p>
+<p><span>step</span>6<br/>進入cmsimde中 將up_dir檔案全部複製至cad2020目錄下</p>
+<p><span>step</span>7<br/>使用指令<br/>pip install flask flask_cors lxml bs4 markdown pelican leo<br/>將建立網站所需模組套件抓下來</p>
+<p><span>step</span>8<br/>cd tmp/cad2020/cmsimde 進入cmsimde目錄中<br/>python wsgi.py<br/>輸入指令以啟動網頁引擎</p>
+<p>輸入密碼admin<br/>將網頁做基本名稱更改後 確認無礙轉成靜態網頁<br/>cd tmp/cad2020 進入cad2020目錄下<br/>git add . 將所更改的檔案整合<br/>git commit -m"檔案名稱"<br/>git push 將檔案推送至倉儲<br/>輸入github 使用者名稱及密碼<br/>推送完成<br/>在cad2020倉儲設定github pages<br/>可得到靜態網址 https://40823148.github.io/cad2020/</p>
 <p><a href="https://github.com/mdecourse/cmsimde"></a></p>
